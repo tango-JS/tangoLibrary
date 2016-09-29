@@ -2,3 +2,4 @@ plugins
 www
 hooks
 resources
+*.tmp.*
