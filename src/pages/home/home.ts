@@ -13,8 +13,17 @@ import { NavController } from 'ionic-angular';
 })
 export class Home {
 
-  constructor(public navCtrl: NavController) {}
+	/*
+		define types before constructor
+	*/
 
+  constructor(public navCtrl: NavController) {
+  	/* this like vm extention */
+  }
+
+  /*
+		component functions
+  */
   ionViewDidLoad() {
     console.log('Hello Home Page');
   }
