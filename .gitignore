@@ -3,3 +3,4 @@ www
 hooks
 resources
 *.tmp.*
+npm-debug.log.*

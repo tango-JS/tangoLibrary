@@ -2,6 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
+// vendor imports
+
 // import all pages
 import { Page2 } from '../pages/page2/page2';
 import { Home } from '../pages/home/home';
