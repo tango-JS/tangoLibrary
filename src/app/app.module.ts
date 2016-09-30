@@ -7,8 +7,9 @@ import { AngularFireModule } from 'angularfire2';
 
 // app imports
 import { MyApp } from './app.component';
-import { Page2 } from '../pages/page2/page2';
+import { Auth } from '../pages/auth/auth';
 import { Home } from '../pages/home/home';
+import { Page2 } from '../pages/page2/page2';
 
 // configs
 export const firebaseConfig = {
@@ -21,8 +22,9 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-    Page2,
-    Home
+    Home,
+    Auth,
+    Page2
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -31,8 +33,9 @@ export const firebaseConfig = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    Page2,
-    Home
+    Home,
+    Auth,
+    Page2
   ],
   providers: []
 })

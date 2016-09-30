@@ -5,8 +5,9 @@ import { StatusBar } from 'ionic-native';
 // vendor imports
 
 // import all pages
-import { Page2 } from '../pages/page2/page2';
+import { Auth } from '../pages/auth/auth';
 import { Home } from '../pages/home/home';
+import { Page2 } from '../pages/page2/page2';
 
 
 @Component({
@@ -16,7 +17,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // set root page
-  rootPage: any = Home;
+  rootPage: any = Auth;
 
   // define pages type
   pages: Array<{title: string, component: any}>;
@@ -26,6 +27,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Login', component: Auth },
       { title: 'Home', component: Home },
       { title: 'Page Two', component: Page2 }
     ];
