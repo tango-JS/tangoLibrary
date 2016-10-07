@@ -9,30 +9,43 @@ import { Home } from '../home/home';
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
+
 @Component({
   selector: 'page-auth',
   templateUrl: 'auth.html'
 })
+
 export class Auth {
 
 	round: boolean;
 	expand: boolean;
+	showSpinner: boolean;
+	hideSpinner: boolean;
 
   constructor(public navCtrl: NavController) {
   	this.round = false;
   	this.expand = false;
+  	this.showSpinner = false;
+  	this.hideSpinner = true;
 
   }
 
   authUser() {
-  	console.log(1);
-  	this.round = true;
+  	this.showSpinner = true;
+  	
+
   	setTimeout(() => {
-  		this.expand = true;
+  		this.round = true;
+  		
   		setTimeout(() => {
-	  		this.navCtrl.setRoot(Home);
-	  	},300)
-  	},500)
+  			this.hideSpinner = false;
+  			this.expand = true;
+	  		
+	  		setTimeout(() => {
+		  		this.navCtrl.setRoot(Home);
+		  	},300)
+	  	},2000)
+  	},200)
   }
 
   setClass() {

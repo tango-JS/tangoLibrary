@@ -15,6 +15,11 @@
             <ion-input type="password"></ion-input>
         </ion-item>
     </ion-list>
-    <button ion-button full round color="danger" class="tangoAnimate quick tangoCentre" [ngClass]="setClass()" (click)="authUser()">Sign in</button>
+    <button *ngIf="!showSpinner" ion-button full round color="danger" (click)="authUser()">
+        Sign In
+    </button>
+    <button *ngIf="showSpinner" ion-button full round color="danger" class="tangoAnimate quick tangoCentre" [ngClass]="setClass()">
+        <ion-spinner color="light" *ngIf="hideSpinner"></ion-spinner>
+    </button>
     <a>Don't have an account? <span>Sign up</span></a>
 </ion-content>

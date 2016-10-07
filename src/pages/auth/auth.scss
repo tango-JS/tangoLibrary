@@ -35,6 +35,7 @@ page-auth {
     &.round {
       width: 52px;
       height: 52px;
+      padding: 0;
       color: color($colors, danger);
     }
     &.expand {
