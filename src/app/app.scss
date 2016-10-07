@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // Global CSS
 // -------------------------------------------------- 
 // Put CSS rules here that you want to apply globally.
@@ -10,3 +8,19 @@
 // automatically applied to the <body> element in the app.
 //
 // App Shared Sass variables belong in app.variables.scss.
+.tangoAnimate {
+  transition: all 1s;
+  &.quick {
+    transition: all 0.5s;
+  }
+  &.slow {
+    transition: all 1.5s;
+  }
+}
+
+// tangoHelper classes
+.tangoCentre {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
