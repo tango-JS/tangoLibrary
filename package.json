@@ -13,7 +13,7 @@
     "run:before": "build"
   },
   "config": {
-    "ionic_rollup": "./build/rollup.config.js"
+    "ionic_rollup": "./roll_up/rollup.config.js"
   },
   "dependencies": {
     "@ionic/storage": "^1.0.3",
