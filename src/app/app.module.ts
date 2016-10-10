@@ -10,6 +10,9 @@ import { MyApp } from './app.component';
 import { Auth } from '../pages/auth/auth';
 import { Home } from '../pages/home/home';
 import { Page2 } from '../pages/page2/page2';
+// Pipes
+// import { SanitizeHtml } from '../pipes/sanitize.pipe';
+
 
 // configs
 export const firebaseConfig = {
